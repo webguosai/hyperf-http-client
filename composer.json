@@ -1,0 +1,43 @@
+{
+    "name": "webguosai/hyperf-http-client",
+    "description": "hyperf http客户端",
+    "keywords": ["hyperf", "http", "httpclient", "guzzle"],
+    "support": {
+        "issues": "https://github.com/webguosai/hyperf-http-client/issues",
+        "source": "https://github.com/webguosai/hyperf-http-client"
+    },
+    "authors": [
+        {
+            "name": "webguosai",
+            "email": "501807312@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-openssl": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-libxml": "*",
+        "ext-simplexml": "*",
+        "ext-iconv": "*",
+        "hyperf/di": "^3.1",
+        "webguosai/http-client-v2": "dev-main"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webguosai\\HyperfHttpClient\\": "src"
+        },
+        "files": [
+            "src/Functions.php"
+        ]
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Webguosai\\HyperfHttpClient\\ConfigProvider"
+        }
+    },
+    "license": "MIT"
+}
