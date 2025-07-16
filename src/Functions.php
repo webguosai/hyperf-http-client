@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace Webguosai\HyperfHttpClient;
 
 use Hyperf\Context\ApplicationContext;
+use Webguosai\HttpClient\Response;
 use Webguosai\HyperfHttpClient\Contract\HttpClientInterface;
 
 if (!function_exists('Webguosai\HyperfHttpClient\http')) {
     /**
-     * 获取APP应用请求实例.
+     * 获取http client实例
      */
-    function http(): HttpClientInterface
+    function http(): Response
     {
         $container = ApplicationContext::getContainer();
 
