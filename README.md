@@ -68,8 +68,8 @@ $response = http()->options($url, $data, $headers);
 - **写法二**
 
 ```php
-/** @var $http \Webguosai\HyperfHttpClient\Contract\HttpClientInterface * */
-$http = di(\Webguosai\HyperfHttpClient\Contract\HttpClientInterface::class);
+/** @var $http \Webguosai\HttpClient\Contract\HttpClientInterface * */
+$http = di(\Webguosai\HttpClient\Contract\HttpClientInterface::class);
 
 $response = $http->request($url, $method, $query, $headers);
 $response = $http->get($url, $query, $headers);

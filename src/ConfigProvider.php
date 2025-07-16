@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Webguosai\HyperfHttpClient;
 
-use Webguosai\HyperfHttpClient\Contract\HttpClientInterface;
+use Webguosai\HttpClient\Contract\HttpClientInterface;
 
 class ConfigProvider
 {

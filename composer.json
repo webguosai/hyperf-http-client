@@ -2,6 +2,7 @@
     "name": "webguosai/hyperf-http-client",
     "description": "hyperf http客户端",
     "keywords": ["hyperf", "http", "httpclient", "guzzle"],
+    "license": "MIT",
     "support": {
         "issues": "https://github.com/webguosai/hyperf-http-client/issues",
         "source": "https://github.com/webguosai/hyperf-http-client"
@@ -39,5 +40,10 @@
             "config": "Webguosai\\HyperfHttpClient\\ConfigProvider"
         }
     },
-    "license": "MIT"
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.packagist.org"
+        }
+    ]
 }

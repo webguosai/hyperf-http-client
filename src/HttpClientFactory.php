@@ -7,10 +7,11 @@ namespace Webguosai\HyperfHttpClient;
 use Hyperf\Contract\ConfigInterface;
 use Psr\Container\ContainerInterface;
 use Webguosai\HttpClient\HttpClient;
+use Webguosai\HttpClient\Contract\HttpClientInterface;
 
 class HttpClientFactory
 {
-    public function __invoke(ContainerInterface $container): HttpClient
+    public function __invoke(ContainerInterface $container): HttpClientInterface
     {
         $config = $container->get(ConfigInterface::class);
         $options = $config->get('http_client', [
