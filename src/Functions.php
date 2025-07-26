@@ -13,8 +13,6 @@ if (!function_exists('Webguosai\HyperfHttpClient\http')) {
      */
     function http(): HttpClientInterface
     {
-        $container = ApplicationContext::getContainer();
-
-        return $container->get(HttpClientInterface::class);
+        return ApplicationContext::getContainer()->get(HttpClientInterface::class);
     }
 }
